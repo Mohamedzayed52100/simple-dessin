@@ -1,0 +1,36 @@
+.container {
+    width: 80%;
+    margin: 50% auto;
+}
+
+.Accordion {
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background: #eee;
+}
+
+.Accordion:hover {
+    background: #ccc;
+}
+
+.Accordion::after {
+    content: '\+';
+    float: right;
+    font-weight: bold;
+    color: #777;
+}
+
+.active::after {
+    content: '-';
+}
+
+.dec {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
